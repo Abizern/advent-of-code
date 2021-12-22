@@ -1,24 +1,18 @@
-(defpackage :advent-of-code/2021/day02
+(defpackage :aoc/2021/d2
  (:use :cl)
- (:documentation ""))
+ (:documentation "--- Day 2: Dive! ---"))
 
-(in-package :advent-of-code/2021/day02)
+(in-package :aoc/2021/d2)
 
-(defparameter +input-file+
-  (asdf:system-relative-pathname
-   'advent-of-code
-   (format nil "Inputs/2021/day02.txt")))
+(defparameter *raw-input* (uiop:read-file-lines "day02.txt"))
 
-(defparameter +input+ (uiop:read-file-lines +input-file+))
+(defparameter *input* )
 
 (defparameter +sample+ '())
 
-(defun title ()
-  "-- Enter Title Here --")
 
-(defun part1 (&optional (input +input+))
+(defun part1 (&optional (input *input*))
   )
 
-(defun part2 (&optional (input +input+))
+(defun part2 (&optional (input *input*))
   )
-
