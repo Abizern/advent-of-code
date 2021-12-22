@@ -1,16 +1,10 @@
-(defpackage :advent-of-code/2021/day01
+(defpackage :aoc/2021/d1
  (:use :cl)
- (:documentation ""))
+ (:documentation "--- Day 1: Sonar Sweep ---"))
 
-(in-package :advent-of-code/2021/day01)
+(in-package :aoc/2021/d1)
 
-(defparameter +input-file+
-  (asdf:system-relative-pathname
-   'advent-of-code
-   (format nil "Inputs/2021/day01.txt")))
-
-(defparameter +input+ (mapcar #'parse-integer (uiop:read-file-lines +input-file+)))
-
+(defparameter *raw-input* (mapcar #'parse-integer (uiop:read-file-lines "day01.txt")))
 
 
 (defparameter +sample+ '(199
@@ -24,15 +18,7 @@
 260
 263))
 
-(defun title ()
-  "-- Enter Title Here --"
-  "--- Day 1: Sonar Sweep ---")
 
-(defun part1 (&optional (input +input+)) ;; -> 1696
-  (count-increasing 1 input))
-
-(defun part2 (&optional (input +input+)) ;; -> 1737
-  (count-increasing 3 input))
 
 (defun count-increasing (n list)
   "given a List and a window size N will return the count of the number of times successive windows of length N will sum to an increasing number"
@@ -40,3 +26,9 @@
         for j in (nthcdr n list)
         counting (> j i) into count
         finally (return count)))
+
+(defun part1 (&optional (input *raw-input*)) ;; -> 1696
+  (count-increasing 1 input))
+
+(defun part2 (&optional (input *raw-input*)) ;; -> 1737
+  (count-increasing 3 input))

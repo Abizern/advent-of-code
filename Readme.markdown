@@ -1,4 +1,4 @@
-# Advent of Code
+g# Advent of Code
 
 My solutions to Advent of Code puzzles.
 
@@ -12,7 +12,7 @@ I'm not a proficient Lisper. This is a chance for me to learn the language and j
 
 ## Usage
 
-This is a package to make it easier to have common code (think Intcode, etc), but generally each day lives in it's own file and can be run in the REPL.
+Just load the file (with Sly in my case) and hack away. I decided it was a waste of time trying to make this into a package.
 
 There is scope for tests, but as it' so easy to work in the REPL in Lisp I am unlikely to be using TDD. I'll circle back around to it when I can use my idea of having a macro for the test suite.
 
