@@ -1,8 +1,8 @@
-(defpackage :aoc/2021/d2
+(defpackage :aoc-21-2
  (:use :cl)
  (:documentation "--- Day 2: Dive! ---"))
 
-(in-package :aoc/2021/d2)
+(in-package :aoc-21-2)
 
 (defparameter *raw-input* (uiop:read-file-lines "day02.txt"))
 

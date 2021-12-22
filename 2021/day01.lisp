@@ -1,8 +1,8 @@
-(defpackage :aoc/2021/d1
+(defpackage :aoc-21-1
  (:use :cl)
  (:documentation "--- Day 1: Sonar Sweep ---"))
 
-(in-package :aoc/2021/d1)
+(in-package :aoc-21-1)
 
 (defparameter *raw-input* (mapcar #'parse-integer (uiop:read-file-lines "day01.txt")))
 
