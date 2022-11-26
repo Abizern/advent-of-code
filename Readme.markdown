@@ -14,11 +14,16 @@ I'm not a proficient Lisper. This is a chance for me to learn the language and j
 
 Just load the file (with Sly in my case) and hack away. I decided it was a waste of time trying to make this into a package.
 
-There is scope for tests, but as it' so easy to work in the REPL in Lisp I am unlikely to be using TDD. I'll circle back around to it when I can use my idea of having a macro for the test suite.
+There is scope for tests, but as it's so easy to work in the REPL in Lisp I am unlikely to be using TDD. I'll circle back around to it when I can use my idea of having a macro for the test suite.
 
-# Installation
+## Installation
 
 Just stick it somewhere Quicklisp can find it.
+
+## Sly documentation
+
+Since I used Sly here's the link to the documentation https://joaotavora.github.io/sly/
+
 
 
 
