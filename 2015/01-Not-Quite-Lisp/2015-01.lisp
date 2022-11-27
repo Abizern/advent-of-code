@@ -7,15 +7,17 @@ Nothing fancy, just looping through the string"))
 
 (in-package :aoc-2015-01)
 
-(defparameter *raw-input* (uiop:read-file-string "input.txt"))
+(defun raw-input ()
+  (uiop:read-file-string "input.txt"))
 
-(defun part1 (&optional (input *raw-input*))
+
+(defun part1 (&optional (input (raw-input)))
   (loop for c across input
         counting (char= c #\() into up
         counting (char= c #\)) into down
         finally (return (- up down))))
 
-(defun part2 (&optional (input *raw-input*))
+(defun part2 (&optional (input (raw-input)))
   (loop for c across input
         for i from 1
         with floor =  0
