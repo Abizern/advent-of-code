@@ -1,12 +1,13 @@
 (defpackage :aoc-2015-01
   (:use :cl)
   (:export #:part1
-           #:part2)
+           #:part2
+           #:*raw-input*)
   (:documentation ""))
 
 (in-package :aoc-2015-01)
 
-(defparameter *raw-input* (uiop:read-file-string (merge-pathnames "input.txt")))
+(defparameter *raw-input* (uiop:read-file-string "input.txt"))
 
 (defun part1 (&optional (input *raw-input*))
   (loop for c across input
